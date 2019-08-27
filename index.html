@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Githubbing</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1> Githubbing 🤓 </h1>
+        <h2> Please enter your Github username and password </h2>
+        <input type="text" name="username" placeholder="username" />
+        <input type="password" name="password" placeholder="password" />
+        <h2> Please enter the username for Github profile you would like to visit </h2>
+        <input
+            type="text"
+            name="user-to-search"
+            placeholder="github user to search"/>
+        <br>
+        <button type="button" class="submit-button">submit</button>
+        <div class="repos-container">
+        </div>
+        <script id="reposTemplate" type="text/x-handlebars-template">
+            {{#repos}}
+            <div class="eachItem">
+                <img id='avatarPhoto' src={{ owner.avatar_url }} />
+                <div class='projectName'>{{ full_name }}</div>
+                </div>
+            </div>
+            {{/repos}}
+        </script>
+        <script id="commits" type="text/x-handlebars-template">
+            {{#commits}}
+            <ul class="commitText"><li>{{commit.message}}</li></ul>
+            {{/commits}}
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
+<!--  -->

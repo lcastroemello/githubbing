@@ -1,0 +1,63 @@
+* {
+    font-size: 1.5rem;
+}
+
+.repos-container {
+    background-color: lightblue;
+}
+
+body {
+    background-color: darkblue;
+}
+
+.submit-button {
+    border: white;
+    background-color: darkblue;
+    color: lightblue;
+}
+
+input {
+    background-color: lightblue;
+}
+
+h1 {
+    font-size: 2rem;
+    color: lightblue;
+}
+
+h2 {
+    color: cornflowerblue;
+    font-size: 1rem;
+}
+
+#avatarPhoto {
+    height: 3rem;
+    width: 3rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.eachItem {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projectName {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.commitText {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+li {
+    font-size: 1rem;
+}
+
+ul {
+    max-height: 20rem;
+}
+/*  */
